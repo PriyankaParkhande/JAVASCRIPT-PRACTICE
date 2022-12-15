@@ -1,0 +1,21 @@
+<script>
+    class add {
+        constructor(a, b) {
+            this.a = a;
+            this.b = b;
+        }
+        get calarea() {
+            return this.findaddition();
+        }
+        findaddition() {
+            return this.a + this.b;
+        }
+
+    }
+    var a = parseInt(prompt());
+    var b = parseInt(prompt());
+    let a1 = new add(a, b);
+    a1.findaddition();
+    // a1.calarea();
+    console.log(a1.calarea);
+</script>

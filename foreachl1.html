@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       var d=[2,4,7,9,4];
+       d.forEach(function(value){
+         document.write(value+"<br>");
+       });
+       document.write("<br>"+d.length);
+       d.push(8);
+       document.write("<br>"+d);
+       d.pop();
+       document.write("<br>"+d);
+       d.sort();
+       document.write("<br>"+d);
+       d.splice(2,0,"l","n");
+       document.write("<br>"+d);
+       d.toString();
+       document.write("<br>"+d);
+
+
+   </script> 
+</body>
+</html>

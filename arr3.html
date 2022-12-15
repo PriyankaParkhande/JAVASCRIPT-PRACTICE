@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title></title>
+ 
+    </head>
+     <body>
+ <Script langauge="javaScript">
+ var arr=[10,30,5,50,60];
+ for(var i=0;i<5/2;i++)
+ {
+    var temp=arr[i];
+    arr[i]=arr[5-i-1];
+    arr[5-i-1]=temp;
+     //document.write(arr[i]);
+}
+for(var i=0;i<5;i++)
+ {
+     document.write(arr[i]+"<br>");
+ }
+
+     
+ </Script>
+ </body>
+ </html>
+ 

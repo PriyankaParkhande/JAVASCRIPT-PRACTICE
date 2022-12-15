@@ -1,0 +1,21 @@
+<script>
+    class employee {
+        constructor(name) {
+            this.ename = name;
+            console.log("employee");
+        }
+        info() {
+            console.log("emp name" + this.ename);
+        }
+    }
+    class manager extends employee {
+        // super();
+        info() {
+            console.log("manager:" + this.ename);
+            super.info();
+        }
+    }
+    let a = new manager("piya");
+    a.info();
+    //  console.log(a.info)
+</script>

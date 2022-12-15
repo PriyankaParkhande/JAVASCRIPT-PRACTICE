@@ -1,0 +1,11 @@
+<script>
+    let complete = true;
+    let prom = new Promise(function(resolve, reject) {
+        if (complete) {
+            resolve("method complete");
+        } else {
+            reject("ethod incomplete");
+        }
+    });
+    console.log(prom);
+</script>

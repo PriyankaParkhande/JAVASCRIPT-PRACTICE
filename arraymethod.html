@@ -1,0 +1,50 @@
+<html>
+   <head>
+   <meta charset="utf-8">
+   <title></title>
+   <Script langauge="javaScript">
+   const x=[10,30,40,49];
+  const f=["p","q","r","s"];
+  const c=["a","b","c","d"];
+   delete f[2];
+   document.write(f+"<br>");
+   const q=["p","q","r","s"];
+   const d=q.concat(c);
+   document.write(d+"<br>");
+   f.splice (2,0,"l","m");
+   document.write(f+"<br>");
+   f.push("e");
+   document.write(f+"<br>");
+   f.pop();
+   document.write(f+"<br>");
+   x.sort();
+   document.write(x+"<br>");
+   x.reverse();
+   document.write(x+"<br>");
+   c.shift();
+   document.write(c+"<br>");
+   f.unshift();
+   document.write(f+"<br>");
+   x.toString();
+   document.write(x+"<br>");
+   f.toString();
+   document.write(f+"<br>");
+
+   f.valueOf();
+   document.write(f+"<br>");
+   
+   c.lastIndexOf("s");
+   document.write(c+"<br>");
+   const p=f.join("and");
+   document.write("&nbsp" +p+"<br>");
+const v=[4,9,16];
+   const t=v.map(Math.sqrt);
+   document.write(t+"<br>");
+
+   const e=Array.isArray(x);
+   document.write(e);
+    </Script>
+   </head>
+    <body>
+</body>
+</html>

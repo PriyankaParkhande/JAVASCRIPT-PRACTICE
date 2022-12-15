@@ -1,0 +1,15 @@
+<script>
+    var n = prompt("enter the size of array");
+    var arr = [];
+    for (var i = 0; i < n; i++) {
+        var a = prompt("enter elements in array");
+        arr.push(a);
+    }
+    var min = arr[0];
+    for (var i = 0; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    document.write("minimum elements in array is:" + min);
+</script>

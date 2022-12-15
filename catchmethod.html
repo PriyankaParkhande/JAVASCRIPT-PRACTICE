@@ -1,0 +1,23 @@
+<script>
+    let complete = true;
+
+    function prom(complete) {
+        return new Promise(function(resolve, reject) {
+            console.log("fetching data,please wait");
+            setTimeout(() => {
+                if (complete) {
+                    resolve("method complete");
+                } else {
+                    reject("method incomplete");
+                }
+            }, 2000)
+        });
+    }
+    //let confulfill = (result) => {console.log(result); }let conreject = (error) => {   console.log(error);} 
+    prom(false).then((result) => {
+        console.log(result);
+    }).catch((error) => {
+        console.log(error);
+    });
+    //console.log(prom);
+</script>
